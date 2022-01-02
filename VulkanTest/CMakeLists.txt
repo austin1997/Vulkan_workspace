@@ -10,8 +10,8 @@ set (CMAKE_CXX_STANDARD 17)
 find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
 
-add_executable(test)
+add_executable(vulkan_test)
 
-target_sources(test PRIVATE main.cpp)
+target_sources(vulkan_test PRIVATE main.cpp)
 
-target_link_libraries(test PRIVATE Vulkan::Vulkan glfw)
+target_link_libraries(vulkan_test PRIVATE Vulkan::Vulkan glfw)
